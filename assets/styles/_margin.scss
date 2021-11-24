@@ -1,0 +1,36 @@
+$margin-default-size: 8;
+$margin-items: (1,2,3,4,5,6,7,8,9,10);
+
+.margin {
+  @each $margin-items in $margin-items {
+    &-#{$margin-default-size * $margin-items} {
+      margin: #{$margin-default-size * $margin-items}px;
+    }
+
+    &-top-#{$margin-default-size * $margin-items} {
+      margin-top: #{$margin-default-size * $margin-items}px;
+    }
+
+    &-bottom-#{$margin-default-size * $margin-items} {
+      margin-bottom: #{$margin-default-size * $margin-items}px;
+    }
+
+    &-left-#{$margin-default-size * $margin-items} {
+      margin-left: #{$margin-default-size * $margin-items}px;
+    }
+
+    &-right-#{$margin-default-size * $margin-items} {
+      margin-right: #{$margin-default-size * $margin-items}px;
+    }
+
+    &-horizontal-#{$margin-default-size * $margin-items} {
+      margin-right: #{$margin-default-size * $margin-items}px;
+      margin-left: #{$margin-default-size * $margin-items}px;
+    }
+
+    &-vertical-#{$margin-default-size * $margin-items} {
+      margin-top: #{$margin-default-size * $margin-items}px;
+      margin-bottom: #{$margin-default-size * $margin-items}px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+
+
+.card{
+  background-color: #68b3e9;
+  border-radius:$border-radius *2;
+  padding:3.2rem;
+
+  &__icon{
+    margin: 2rem auto;
+    width: 5rem;
+  }
+
+  &__title{
+    color: $primary-text-color;
+    font-size:2.4rem;
+    font-weight:bolder;
+  }
+
+  &__description{
+    color: $secondary-text-color;
+    font-size:1.8rem;
+  }
+}

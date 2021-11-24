@@ -1,0 +1,55 @@
+
+@import "colors";
+@import "sizes";
+@import "card";
+@import "margin";
+@import "text";
+@import "city-temperature";
+@import "search";
+
+$container-padding: $padding;
+$sun-size: 20rem;
+
+
+html {
+  font-size:62.5%;
+  font-family: proxima-light;
+}
+h1,h2,h3,h4,h5,h6,strong,b
+{
+  font-family: proxima-bold;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  background: rgb(58,141,205);
+  background: radial-gradient(circle, rgba(58,141,205,1) 0%, rgba(66,160,229,1) 39%, rgba(1,30,83,1) 100%);
+  padding: $container-padding;
+}
+
+figure{
+  margin:0;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+.temperature{
+  display: flex;
+  flex-direction: column-reverse;
+  &__current-degree{
+    font-size:3.2rem;
+    color: $secondary-text-color;
+  }
+}
+
+.sun{
+  margin: 2.4rem auto;
+  width: $sun-size;
+}
+
+
